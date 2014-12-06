@@ -18,6 +18,11 @@ For debug version it adds -DEBUG suffix to the versionName. Installing two the s
 because applicationIdSuffix for debug version of the app is added during the compilation, what changes package name for this build variant.
 As a result, release version of the app has package name "fp.com.debugreleasetemplate" and debug version of the app has package name "fp.com.debugreleasetemplate.debug".
 
+## Important files with build configurations
+
+- [build.gradle](https://github.com/FutureProcessing/android-debug-release-template/blob/master/build.gradle)
+- [app/build.gradle](https://github.com/FutureProcessing/android-debug-release-template/blob/master/app/build.gradle)
+
 ## Additional information
 
 Please note that Android Studio, Android SDK, Build Tools and Gradle are evolving very quickly and their future updates may cause compilation errors of this template.
