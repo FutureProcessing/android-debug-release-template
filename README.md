@@ -23,6 +23,46 @@ As a result, release version of the app has package name "fp.com.debugreleasetem
 - [build.gradle](https://github.com/FutureProcessing/android-debug-release-template/blob/master/build.gradle)
 - [app/build.gradle](https://github.com/FutureProcessing/android-debug-release-template/blob/master/app/build.gradle)
 
+## Building project with Android Studio
+
+In lower left corner of Android Studio, choose tab `Build Variants`. In this tab you can switch between debug and release version of the output application.
+When you have chosen appropriate Build Variant, make project (shortcut: `CTRL+F9`). After that, you can run your compiled application (shortcut: `Shift+F10`).
+
+![Screenshot](build_variants_screen.png "Screenshot")
+
+## Building project with Gradle (Command Line Interface)
+
+### On Windows
+
+#### Debug version
+
+```
+> gradlew.bat assembleDebug
+```
+
+#### Release version
+
+```
+> gradlew.bat assembleRelease
+```
+
+### On Linux and Mac OS
+
+#### Debug version
+
+```
+$ chmod +x gradlew
+$ ./gradlew assembleDebug
+```
+
+#### Release version
+
+Assuming we gave rights to execute for gradle wrapper (gradlew file) earlier:
+
+```
+$ ./gradlew assembleRelease
+```
+
 ## Additional information
 
 Please note that Android Studio, Android SDK, Build Tools and Gradle are evolving very quickly and their future updates may cause compilation errors of this template.
