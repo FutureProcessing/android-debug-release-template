@@ -48,12 +48,14 @@ android {
         }
     }
 
-    applicationVariants.all { variant ->
-        variant.processManifest << {
-            if (variant.buildType.isDebuggable()) {
-                def manifestOutFile = variant.processManifest.manifestOutputFile
-                def newFileContents = manifestOutFile.getText('UTF-8').replace(launcherIconRelease, launcherIconDebug)
-                manifestOutFile.write(newFileContents, 'UTF-8')
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            output.processManifest.doLast {
+                if (variant.buildType.isDebuggable()) {
+                    def manifestOutFile = output.processManifest.manifestOutputFile
+                    def newFileContents = manifestOutFile.getText('UTF-8').replace(launcherIconRelease, launcherIconDebug)
+                    manifestOutFile.write(newFileContents, 'UTF-8')
+                }
             }
         }
     }

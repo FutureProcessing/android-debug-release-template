@@ -66,4 +66,4 @@ $ ./gradlew assembleRelease
 ## Additional information
 
 Please note that Android Studio, Android SDK, Build Tools and Gradle are evolving very quickly and their future updates may cause compilation errors of this template.
-This project was created with Android Studio 1.0 RC 4.
+This project was created with Android Studio 1.0.1 and Build Tools 1.0.0.
