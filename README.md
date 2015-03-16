@@ -67,3 +67,10 @@ $ ./gradlew assembleRelease
 
 Please note that Android Studio, Android SDK, Build Tools and Gradle are evolving very quickly and their future updates may cause compilation errors of this template.
 This project was created with Android Studio 1.0.1 and Build Tools 1.0.0.
+
+License
+=======
+
+    Copyright 2015 Future Processing Sp. z o.o.
+
+    Licensed under The MIT License (MIT), see LICENSE.txt for details.
